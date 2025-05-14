@@ -50,3 +50,40 @@
 2025-05-13 17:38:33 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
 2025-05-13 17:38:35 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
 2025-05-13 17:38:35 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-14 10:55:41 - app - INFO - Logger configured successfully
+2025-05-14 10:55:42 - app - INFO - Logger configured successfully
+2025-05-14 10:55:42 - app - INFO - redis and db startup...
+2025-05-14 10:56:04 - app - INFO - redis and db shutdown...
+2025-05-14 10:56:55 - app - INFO - Logger configured successfully
+2025-05-14 10:56:57 - app - INFO - Logger configured successfully
+2025-05-14 10:56:57 - app - INFO - redis and db startup...
+2025-05-14 10:57:22 - app.sight.router - ERROR - get_sight_detail failed after 4.08 seconds: Error connecting to localhost:6379. Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379).
+2025-05-14 10:57:22 - app.sight.router - ERROR - Traceback (most recent call last):
+  File "C:\Users\12269\Desktop\fast_api_service\venv\lib\site-packages\aioredis\connection.py", line 692, in connect
+    await self._connect()
+  File "C:\Users\12269\Desktop\fast_api_service\venv\lib\site-packages\aioredis\connection.py", line 719, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "D:\dev\python\python3.8\lib\asyncio\streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "D:\dev\python\python3.8\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise OSError('Multiple exceptions: {}'.format(
+OSError: Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\12269\Desktop\fast_api_service\app\utils\logger.py", line 75, in async_wrapper
+    result = await func(*args, **kwargs)
+  File "c:\Users\12269\Desktop\fast_api_service\app\sight\router.py", line 51, in get_sight_detail
+    cached_response = await get_Info_from_redis(redis, cache_key)
+  File "c:\Users\12269\Desktop\fast_api_service\app\sight\router.py", line 32, in get_Info_from_redis
+    cached = await redis.get(cache_key)
+  File "C:\Users\12269\Desktop\fast_api_service\venv\lib\site-packages\aioredis\client.py", line 1082, in execute_command
+    conn = self.connection or await pool.get_connection(command_name, **options)
+  File "C:\Users\12269\Desktop\fast_api_service\venv\lib\site-packages\aioredis\connection.py", line 1416, in get_connection
+    await connection.connect()
+  File "C:\Users\12269\Desktop\fast_api_service\venv\lib\site-packages\aioredis\connection.py", line 698, in connect
+    raise ConnectionError(self._error_message(e))
+aioredis.exceptions.ConnectionError: Error connecting to localhost:6379. Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379).
+
+2025-05-14 10:57:29 - app - INFO - redis and db shutdown...

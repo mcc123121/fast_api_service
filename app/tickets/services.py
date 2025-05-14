@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from app.models.ticket import Ticket
+from app.tickets.models import Ticket
 from typing import List, Optional
 
 async def get_ticket_async(db: AsyncSession, ticket_id: int) -> Optional[Ticket]:

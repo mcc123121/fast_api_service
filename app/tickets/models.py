@@ -1,5 +1,5 @@
 # app/models/ticket.py
-from sqlalchemy import Column, Integer, String, Numeric, Boolean, Text, ForeignKey, Float, Date, DateTime, BigInteger
+from sqlalchemy import Column, Integer, String, Numeric, Boolean, Text, ForeignKey, Float, Date, DateTime
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 from app.database import Base

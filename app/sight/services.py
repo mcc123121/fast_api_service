@@ -2,7 +2,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy import or_, func
 from sqlalchemy.orm import selectinload
-from app.models.sight import Sight
+from app.sight.models import Sight
 from typing import List, Optional
 
 

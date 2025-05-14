@@ -3,7 +3,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import os
-from app.routers import sights, tickets  # 添加sights
+from app.sight.router import router as sight_router
+from app.tickets.router import router as tickets_router
 from app.database import  get_redis,create_async_db_pool,close_async_db_pool
 from app.utils.logger import setup_logger
 
@@ -42,8 +43,8 @@ app.add_middleware(
 logger = setup_logger()
 
 # 注册路由
-app.include_router(tickets.router)
-app.include_router(sights.router)  
+app.include_router(tickets_router)
+app.include_router(sight_router)  
 
 # 挂载静态文件目录
 app.mount("/static", StaticFiles(directory="app/static"), name="static")

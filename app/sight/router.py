@@ -2,10 +2,10 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.database import get_async_db, get_redis
-from app.models.sight import Sight
-from app.schemas.sight import SightResponse, SightListResponse
-from app.schemas.response import ResponseModel
-from app.services.sight import (
+from app.sight.models import Sight
+from app.sight.schemas import SightResponse, SightListResponse
+from app.sight.response import ResponseModel
+from app.sight.services import (
     get_sight_by_id_async,
     get_sight_async,
     count_sights_async,
