@@ -1,0 +1,52 @@
+2025-05-13 16:24:19 - app - INFO - Logger configured successfully
+2025-05-13 16:24:20 - app - INFO - Logger configured successfully
+2025-05-13 16:25:17 - app - INFO - Logger configured successfully
+2025-05-13 16:25:27 - app - INFO - Logger configured successfully
+2025-05-13 16:25:28 - app - INFO - Logger configured successfully
+2025-05-13 16:29:01 - app - INFO - Logger configured successfully
+2025-05-13 16:29:01 - app - INFO - redis and db startup...
+2025-05-13 16:29:40 - app - INFO - Logger configured successfully
+2025-05-13 16:29:40 - app - INFO - redis and db startup...
+2025-05-13 16:44:18 - app - INFO - Logger configured successfully
+2025-05-13 16:44:19 - app - INFO - Logger configured successfully
+2025-05-13 16:44:19 - app - INFO - redis and db startup...
+2025-05-13 16:44:35 - app - INFO - redis and db shutdown...
+2025-05-13 16:46:19 - app - INFO - Logger configured successfully
+2025-05-13 16:46:20 - app - INFO - Logger configured successfully
+2025-05-13 16:46:20 - app - INFO - redis and db startup...
+2025-05-13 16:46:24 - app - INFO - redis and db shutdown...
+2025-05-13 16:49:00 - app - INFO - Logger configured successfully
+2025-05-13 16:49:01 - app - INFO - Logger configured successfully
+2025-05-13 16:49:02 - app - INFO - redis and db startup...
+2025-05-13 16:49:04 - app - INFO - redis and db shutdown...
+2025-05-13 16:49:17 - app - INFO - Logger configured successfully
+2025-05-13 16:49:18 - app - INFO - Logger configured successfully
+2025-05-13 16:49:19 - app - INFO - redis and db startup...
+2025-05-13 16:53:30 - app - INFO - redis and db shutdown...
+2025-05-13 16:53:37 - app - INFO - Logger configured successfully
+2025-05-13 16:53:39 - app - INFO - Logger configured successfully
+2025-05-13 16:53:39 - app - INFO - redis and db startup...
+2025-05-13 17:13:50 - app - INFO - Logger configured successfully
+2025-05-13 17:13:51 - app - INFO - Logger configured successfully
+2025-05-13 17:13:51 - app - INFO - redis and db startup...
+2025-05-13 17:14:10 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:18:29 - app - INFO - redis and db shutdown...
+2025-05-13 17:18:29 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-13 17:18:31 - app - INFO - Logger configured successfully
+2025-05-13 17:18:31 - app - INFO - redis and db startup...
+2025-05-13 17:18:44 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:20:44 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:20:44 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:20:49 - app.routers.sights - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-13 17:21:26 - app.routers.sights - INFO - get_sight_detail executed in 0.00 seconds
+2025-05-13 17:21:27 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:21:27 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:21:55 - app.routers.sights - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-13 17:38:04 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:04 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:08 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:08 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:33 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:33 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:35 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:35 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.

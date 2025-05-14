@@ -1,0 +1,15 @@
+2025-05-13 17:14:10 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:18:29 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-13 17:18:44 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:20:44 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:20:44 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:21:27 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:21:27 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:04 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:04 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:08 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:08 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:33 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:33 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:35 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-13 17:38:35 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
