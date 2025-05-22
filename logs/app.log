@@ -87,3 +87,369 @@ Traceback (most recent call last):
 aioredis.exceptions.ConnectionError: Error connecting to localhost:6379. Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379).
 
 2025-05-14 10:57:29 - app - INFO - redis and db shutdown...
+2025-05-14 16:50:34 - app - INFO - Logger configured successfully
+2025-05-14 16:50:35 - app - INFO - Logger configured successfully
+2025-05-14 16:50:35 - app - INFO - redis and db startup...
+2025-05-14 16:51:47 - app - INFO - Logger configured successfully
+2025-05-14 16:51:49 - app - INFO - Logger configured successfully
+2025-05-14 16:51:49 - app - INFO - redis and db startup...
+2025-05-14 16:52:07 - app.sight.router - INFO - get_sight_detail executed in 0.16 seconds
+2025-05-14 16:52:36 - app - INFO - redis and db shutdown...
+2025-05-14 16:52:36 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-19 09:27:57 - app - INFO - Logger configured successfully
+2025-05-19 09:27:58 - app - INFO - Logger configured successfully
+2025-05-19 09:27:58 - app - INFO - redis and db startup...
+2025-05-19 10:12:08 - app - INFO - redis and db shutdown...
+2025-05-19 10:14:11 - app - INFO - Logger configured successfully
+2025-05-19 10:14:13 - app - INFO - Logger configured successfully
+2025-05-19 10:14:13 - app - INFO - redis and db startup...
+2025-05-19 10:24:25 - app - INFO - redis and db shutdown...
+2025-05-19 10:24:27 - app - INFO - Logger configured successfully
+2025-05-19 10:24:27 - app - INFO - redis and db startup...
+2025-05-19 10:24:57 - app - INFO - redis and db shutdown...
+2025-05-19 10:24:58 - app - INFO - Logger configured successfully
+2025-05-19 10:24:58 - app - INFO - redis and db startup...
+2025-05-19 10:25:26 - app - INFO - redis and db shutdown...
+2025-05-19 10:25:27 - app - INFO - Logger configured successfully
+2025-05-19 10:25:27 - app - INFO - redis and db startup...
+2025-05-19 10:29:25 - app - INFO - Logger configured successfully
+2025-05-19 10:29:26 - app - INFO - Logger configured successfully
+2025-05-19 10:29:26 - app - INFO - redis and db startup...
+2025-05-19 10:31:59 - app - INFO - redis and db shutdown...
+2025-05-19 10:32:01 - app - INFO - Logger configured successfully
+2025-05-19 10:32:01 - app - INFO - redis and db startup...
+2025-05-19 10:32:57 - app - INFO - redis and db shutdown...
+2025-05-19 10:32:59 - app - INFO - Logger configured successfully
+2025-05-19 10:32:59 - app - INFO - redis and db startup...
+2025-05-19 10:36:39 - app - INFO - redis and db shutdown...
+2025-05-19 10:36:41 - app - INFO - Logger configured successfully
+2025-05-19 10:36:41 - app - INFO - redis and db startup...
+2025-05-19 10:46:39 - app - INFO - redis and db shutdown...
+2025-05-19 10:46:41 - app - INFO - Logger configured successfully
+2025-05-19 10:46:41 - app - INFO - redis and db startup...
+2025-05-19 10:47:11 - app - INFO - redis and db shutdown...
+2025-05-19 10:48:06 - app - INFO - Logger configured successfully
+2025-05-19 10:48:08 - app - INFO - Logger configured successfully
+2025-05-19 10:48:08 - app - INFO - redis and db startup...
+2025-05-19 10:56:04 - app.routers.sights - ERROR - Error creating sight: 2 validation errors for SightResponse
+profile
+  Error extracting attribute: StatementError: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT sight_profile.id AS sight_profile_id, sight_profile.img AS sight_profile_img, sight_profile.address AS sight_profile_address, sight_profile.`explain` AS sight_profile_explain, sight_profile.open_time AS sight_profile_open_time, sight_profile.tel AS sight_profile_tel, sight_profile.level AS sight_profile_level, sight_profile.tags AS sight_profile_tags, sight_profile.attention AS sight_profile_attention, sight_profile.location AS sight_profile_location, sight_profile.sight_id AS sight_profile_sight_id 
+FROM sight_profile 
+WHERE %s = sight_profile.sight_id]
+[parameters: [{'%(1890917563504 param)s': 0}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s) [type=get_attribute_error, input_value=<app.sight.models.Sight o...t at 0x000001B8437B7370>, input_type=Sight]
+    For further information visit https://errors.pydantic.dev/2.10/v/get_attribute_error
+tickets
+  Error extracting attribute: StatementError: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT sight_ticket.id AS sight_ticket_id, sight_ticket.sight_id AS sight_ticket_sight_id, sight_ticket.name AS sight_ticket_name, sight_ticket.`desc` AS sight_ticket_desc, sight_ticket.type AS sight_ticket_type, sight_ticket.price AS sight_ticket_price, sight_ticket.discount AS sight_ticket_discount, sight_ticket.total AS sight_ticket_total, sight_ticket.remain AS sight_ticket_remain, sight_ticket.expire_date AS sight_ticket_expire_date, sight_ticket.return_policy AS sight_ticket_return_policy, sight_ticket.is_valid AS sight_ticket_is_valid, sight_ticket.created_at AS sight_ticket_created_at, sight_ticket.updated_at AS sight_ticket_updated_at 
+FROM sight_ticket 
+WHERE %s = sight_ticket.sight_id]
+[parameters: [{'%(1890918115408 param)s': 0}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s) [type=get_attribute_error, input_value=<app.sight.models.Sight o...t at 0x000001B8437B7370>, input_type=Sight]
+    For further information visit https://errors.pydantic.dev/2.10/v/get_attribute_error
+2025-05-19 10:56:29 - app.routers.sights - ERROR - Error creating sight: 2 validation errors for SightResponse
+profile
+  Error extracting attribute: StatementError: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT sight_profile.id AS sight_profile_id, sight_profile.img AS sight_profile_img, sight_profile.address AS sight_profile_address, sight_profile.`explain` AS sight_profile_explain, sight_profile.open_time AS sight_profile_open_time, sight_profile.tel AS sight_profile_tel, sight_profile.level AS sight_profile_level, sight_profile.tags AS sight_profile_tags, sight_profile.attention AS sight_profile_attention, sight_profile.location AS sight_profile_location, sight_profile.sight_id AS sight_profile_sight_id 
+FROM sight_profile 
+WHERE %s = sight_profile.sight_id]
+[parameters: [{'%(1890917563504 param)s': 0}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s) [type=get_attribute_error, input_value=<app.sight.models.Sight o...t at 0x000001B8438004C0>, input_type=Sight]
+    For further information visit https://errors.pydantic.dev/2.10/v/get_attribute_error
+tickets
+  Error extracting attribute: StatementError: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT sight_ticket.id AS sight_ticket_id, sight_ticket.sight_id AS sight_ticket_sight_id, sight_ticket.name AS sight_ticket_name, sight_ticket.`desc` AS sight_ticket_desc, sight_ticket.type AS sight_ticket_type, sight_ticket.price AS sight_ticket_price, sight_ticket.discount AS sight_ticket_discount, sight_ticket.total AS sight_ticket_total, sight_ticket.remain AS sight_ticket_remain, sight_ticket.expire_date AS sight_ticket_expire_date, sight_ticket.return_policy AS sight_ticket_return_policy, sight_ticket.is_valid AS sight_ticket_is_valid, sight_ticket.created_at AS sight_ticket_created_at, sight_ticket.updated_at AS sight_ticket_updated_at 
+FROM sight_ticket 
+WHERE %s = sight_ticket.sight_id]
+[parameters: [{'%(1890918115408 param)s': 0}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s) [type=get_attribute_error, input_value=<app.sight.models.Sight o...t at 0x000001B8438004C0>, input_type=Sight]
+    For further information visit https://errors.pydantic.dev/2.10/v/get_attribute_error
+2025-05-19 10:57:14 - app - INFO - redis and db shutdown...
+2025-05-19 10:57:14 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-19 10:57:22 - app - INFO - Logger configured successfully
+2025-05-19 10:57:24 - app - INFO - Logger configured successfully
+2025-05-19 10:57:24 - app - INFO - redis and db startup...
+2025-05-19 10:57:27 - app.routers.sights - ERROR - Error creating sight: 2 validation errors for SightResponse
+profile
+  Error extracting attribute: StatementError: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT sight_profile.id AS sight_profile_id, sight_profile.img AS sight_profile_img, sight_profile.address AS sight_profile_address, sight_profile.`explain` AS sight_profile_explain, sight_profile.open_time AS sight_profile_open_time, sight_profile.tel AS sight_profile_tel, sight_profile.level AS sight_profile_level, sight_profile.tags AS sight_profile_tags, sight_profile.attention AS sight_profile_attention, sight_profile.location AS sight_profile_location, sight_profile.sight_id AS sight_profile_sight_id 
+FROM sight_profile 
+WHERE %s = sight_profile.sight_id]
+[parameters: [{'%(2025532174496 param)s': 0}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s) [type=get_attribute_error, input_value=<app.sight.models.Sight o...t at 0x000001D79B203EB0>, input_type=Sight]
+    For further information visit https://errors.pydantic.dev/2.10/v/get_attribute_error
+tickets
+  Error extracting attribute: StatementError: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT sight_ticket.id AS sight_ticket_id, sight_ticket.sight_id AS sight_ticket_sight_id, sight_ticket.name AS sight_ticket_name, sight_ticket.`desc` AS sight_ticket_desc, sight_ticket.type AS sight_ticket_type, sight_ticket.price AS sight_ticket_price, sight_ticket.discount AS sight_ticket_discount, sight_ticket.total AS sight_ticket_total, sight_ticket.remain AS sight_ticket_remain, sight_ticket.expire_date AS sight_ticket_expire_date, sight_ticket.return_policy AS sight_ticket_return_policy, sight_ticket.is_valid AS sight_ticket_is_valid, sight_ticket.created_at AS sight_ticket_created_at, sight_ticket.updated_at AS sight_ticket_updated_at 
+FROM sight_ticket 
+WHERE %s = sight_ticket.sight_id]
+[parameters: [{'%(2025532155024 param)s': 0}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s) [type=get_attribute_error, input_value=<app.sight.models.Sight o...t at 0x000001D79B203EB0>, input_type=Sight]
+    For further information visit https://errors.pydantic.dev/2.10/v/get_attribute_error
+2025-05-19 11:00:59 - app - INFO - redis and db shutdown...
+2025-05-19 11:00:59 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-19 11:01:01 - app - INFO - Logger configured successfully
+2025-05-19 11:01:01 - app - INFO - redis and db startup...
+2025-05-19 11:01:46 - app - INFO - redis and db shutdown...
+2025-05-19 11:01:47 - app - INFO - Logger configured successfully
+2025-05-19 11:01:48 - app - INFO - redis and db startup...
+2025-05-19 11:01:51 - app.routers.sights - ERROR - Error creating sight: Multiple rows were found when one or none was required
+2025-05-19 11:09:10 - app - INFO - redis and db shutdown...
+2025-05-19 11:09:10 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-19 11:09:11 - app - INFO - Logger configured successfully
+2025-05-19 11:09:11 - app - INFO - redis and db startup...
+2025-05-19 17:20:35 - app - INFO - redis and db shutdown...
+2025-05-19 17:20:35 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-19 17:21:04 - app - INFO - Logger configured successfully
+2025-05-19 17:21:31 - app - INFO - Logger configured successfully
+2025-05-19 17:21:31 - app - INFO - redis and db startup...
+2025-05-19 17:39:24 - app - INFO - Logger configured successfully
+2025-05-19 17:39:25 - app - INFO - Logger configured successfully
+2025-05-19 17:39:26 - app - INFO - redis and db startup...
+2025-05-20 08:59:36 - app - INFO - Logger configured successfully
+2025-05-20 08:59:37 - app - INFO - Logger configured successfully
+2025-05-20 08:59:37 - app - INFO - redis and db startup...
+2025-05-20 09:15:13 - app - INFO - redis and db shutdown...
+2025-05-20 09:17:41 - app - INFO - Logger configured successfully
+2025-05-20 09:18:39 - app - INFO - Logger configured successfully
+2025-05-20 09:18:40 - app - INFO - Logger configured successfully
+2025-05-20 09:18:40 - app - INFO - redis and db startup...
+2025-05-20 09:46:09 - app.routers.sights - ERROR - Error deleting sight 0: Error connecting to localhost:6379. Multiple exceptions: [Errno 10061] Connect call failed ('::1', 6379, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 6379).
+2025-05-20 09:47:19 - app - INFO - redis and db shutdown...
+2025-05-20 09:47:19 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 09:47:30 - app - INFO - Logger configured successfully
+2025-05-20 09:47:30 - app - INFO - redis and db startup...
+2025-05-20 09:51:58 - app - INFO - redis and db shutdown...
+2025-05-20 09:51:59 - app - INFO - Logger configured successfully
+2025-05-20 09:51:59 - app - INFO - redis and db startup...
+2025-05-20 09:57:30 - app - INFO - Logger configured successfully
+2025-05-20 09:58:04 - app - INFO - Logger configured successfully
+2025-05-20 09:58:04 - app - INFO - redis and db startup...
+2025-05-20 10:10:17 - app - INFO - Logger configured successfully
+2025-05-20 10:10:17 - app - INFO - redis and db startup...
+2025-05-20 10:16:00 - app - INFO - redis and db shutdown...
+2025-05-20 10:16:07 - app - INFO - Logger configured successfully
+2025-05-20 10:16:08 - app - INFO - Logger configured successfully
+2025-05-20 10:16:09 - app - INFO - redis and db startup...
+2025-05-20 10:23:51 - app - INFO - redis and db shutdown...
+2025-05-20 10:23:51 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 10:23:52 - app - INFO - Logger configured successfully
+2025-05-20 10:23:52 - app - INFO - redis and db startup...
+2025-05-20 10:39:15 - app - INFO - redis and db shutdown...
+2025-05-20 10:39:15 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 14:50:37 - app - INFO - Logger configured successfully
+2025-05-20 14:50:38 - app - INFO - Logger configured successfully
+2025-05-20 14:50:38 - app - INFO - redis and db startup...
+2025-05-20 14:57:22 - app.routers.sights - ERROR - Error deleting sight 0: (pymysql.err.IntegrityError) (1048, "Column 'sight_id' cannot be null")
+[SQL: UPDATE sight_profile SET sight_id=%s WHERE sight_profile.id = %s]
+[parameters: (None, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-20 15:01:58 - app.routers.sights - ERROR - Error deleting sight 0: (pymysql.err.IntegrityError) (1048, "Column 'sight_id' cannot be null")
+[SQL: UPDATE sight_profile SET sight_id=%s WHERE sight_profile.id = %s]
+[parameters: (None, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-20 15:01:58 - app - INFO - redis and db shutdown...
+2025-05-20 15:01:58 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:02:00 - app - INFO - Logger configured successfully
+2025-05-20 15:02:00 - app - INFO - redis and db startup...
+2025-05-20 15:06:58 - app - INFO - redis and db shutdown...
+2025-05-20 15:06:58 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:07:00 - app - INFO - Logger configured successfully
+2025-05-20 15:07:00 - app - INFO - redis and db startup...
+2025-05-20 15:09:24 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:24 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:31 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:37 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:37 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:38 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-20 15:09:42 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:42 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:42 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-20 15:09:45 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:47 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:56 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:56 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:56 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:09:58 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 15:10:01 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 15:15:22 - app - INFO - redis and db shutdown...
+2025-05-20 15:15:22 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:15:22 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:15:24 - app - INFO - Logger configured successfully
+2025-05-20 15:15:24 - app - INFO - redis and db startup...
+2025-05-20 15:15:33 - app - INFO - redis and db shutdown...
+2025-05-20 15:15:38 - app - INFO - Logger configured successfully
+2025-05-20 15:15:39 - app - INFO - Logger configured successfully
+2025-05-20 15:15:39 - app - INFO - redis and db startup...
+2025-05-20 15:15:46 - app.routers.sights - ERROR - Error caching hot sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:15:46 - app.routers.sights - ERROR - Error caching fine sights data: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2025-05-20 15:16:47 - app - INFO - redis and db shutdown...
+2025-05-20 15:16:47 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:16:48 - app - INFO - Logger configured successfully
+2025-05-20 15:16:48 - app - INFO - redis and db startup...
+2025-05-20 15:17:38 - app - INFO - redis and db shutdown...
+2025-05-20 15:17:38 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:17:38 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 15:17:39 - app - INFO - Logger configured successfully
+2025-05-20 15:17:39 - app - INFO - redis and db startup...
+2025-05-20 15:18:04 - app - INFO - Logger configured successfully
+2025-05-20 15:18:05 - app - INFO - Logger configured successfully
+2025-05-20 15:18:05 - app - INFO - redis and db startup...
+2025-05-20 15:18:59 - app - INFO - redis and db shutdown...
+2025-05-20 15:19:06 - app - INFO - Logger configured successfully
+2025-05-20 15:19:07 - app - INFO - Logger configured successfully
+2025-05-20 15:19:07 - app - INFO - redis and db startup...
+2025-05-20 15:21:27 - app - INFO - Logger configured successfully
+2025-05-20 15:21:29 - app - INFO - Logger configured successfully
+2025-05-20 15:21:29 - app - INFO - redis and db startup...
+2025-05-20 15:32:12 - app - INFO - Logger configured successfully
+2025-05-20 15:32:12 - app - INFO - redis and db startup...
+2025-05-20 15:33:12 - app - INFO - Logger configured successfully
+2025-05-20 15:33:12 - app - INFO - redis and db startup...
+2025-05-20 15:34:20 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-20 15:46:25 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-20 15:46:26 - app.sight.router - INFO - get_sight_detail executed in 0.00 seconds
+2025-05-20 15:46:40 - app.routers.sights - ERROR - Error caching data: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2025-05-20 16:07:07 - app - INFO - Logger configured successfully
+2025-05-20 16:07:08 - app - INFO - Logger configured successfully
+2025-05-20 16:07:09 - app - INFO - redis and db startup...
+2025-05-20 16:07:25 - app.routers.sights - INFO - Successfully cleared all sight caches
+2025-05-20 16:07:55 - app - INFO - Logger configured successfully
+2025-05-20 16:07:57 - app - INFO - Logger configured successfully
+2025-05-20 16:07:57 - app - INFO - redis and db startup...
+2025-05-20 16:08:03 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:08:03 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:08:03 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:08:03 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:08:09 - app.routers.sights - INFO - No cache found for key: sight:detail:1
+2025-05-20 16:08:09 - app.routers.sights - ERROR - Error caching sight detail 1: Object of type datetime is not JSON serializable
+2025-05-20 16:08:09 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-20 16:08:17 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:08:17 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:08:17 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:08:17 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:08:20 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:08:20 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:08:20 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:08:20 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:09:10 - app.routers.sights - INFO - No cache found for key: sight:list:1:10
+2025-05-20 16:09:10 - app.routers.sights - ERROR - Error caching data: Object of type datetime is not JSON serializable
+2025-05-20 16:09:15 - app.routers.sights - INFO - No cache found for key: sight:list:1:10
+2025-05-20 16:09:15 - app.routers.sights - ERROR - Error caching data: Object of type datetime is not JSON serializable
+2025-05-20 16:09:52 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:09:52 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:09:52 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:09:52 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:16 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:10:16 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:26 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:10:26 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:10:26 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:26 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:28 - app.routers.sights - INFO - No cache found for key: sight:list:1:10
+2025-05-20 16:10:28 - app.routers.sights - ERROR - Error caching data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:29 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:10:29 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:10:29 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:29 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:31 - app.routers.sights - INFO - No cache found for key: sight:list:1:10
+2025-05-20 16:10:31 - app.routers.sights - ERROR - Error caching data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:31 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:10:31 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:10:58 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:10:58 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:11:06 - app.routers.sights - INFO - No cache found for key: sight:list:1:10
+2025-05-20 16:11:06 - app.routers.sights - ERROR - Error caching data: Object of type datetime is not JSON serializable
+2025-05-20 16:11:07 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:11:07 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:11:07 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:11:07 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:11:09 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:11:09 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:11:09 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:11:09 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:11:13 - app.routers.sights - INFO - No cache found for key: sight:list:1:10
+2025-05-20 16:11:13 - app.routers.sights - ERROR - Error caching data: Object of type datetime is not JSON serializable
+2025-05-20 16:12:21 - app - INFO - redis and db shutdown...
+2025-05-20 16:12:21 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 16:12:21 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-20 16:12:23 - app - INFO - Logger configured successfully
+2025-05-20 16:12:23 - app - INFO - redis and db startup...
+2025-05-20 16:12:53 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:12:53 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:12:53 - app.routers.sights - ERROR - Error caching fine sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:12:53 - app.routers.sights - ERROR - Error caching hot sights data: Object of type datetime is not JSON serializable
+2025-05-20 16:15:29 - app - INFO - Logger configured successfully
+2025-05-20 16:15:30 - app - INFO - Logger configured successfully
+2025-05-20 16:15:30 - app - INFO - redis and db startup...
+2025-05-20 16:15:43 - app.routers.sights - INFO - Successfully cleared all sight caches
+2025-05-20 16:16:42 - app - INFO - Logger configured successfully
+2025-05-20 16:16:43 - app - INFO - Logger configured successfully
+2025-05-20 16:16:43 - app - INFO - redis and db startup...
+2025-05-20 16:17:14 - app - INFO - Logger configured successfully
+2025-05-20 16:17:15 - app - INFO - Logger configured successfully
+2025-05-20 16:17:15 - app - INFO - redis and db startup...
+2025-05-20 16:17:26 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-20 16:17:26 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-20 16:17:26 - app.routers.sights - INFO - Successfully cached hot sights data, count: 10
+2025-05-20 16:17:26 - app.routers.sights - INFO - Successfully cached fine sights data, count: 3
+2025-05-20 16:17:44 - app.routers.sights - INFO - No cache found for key: sight:detail:1
+2025-05-20 16:17:44 - app.routers.sights - INFO - Successfully cached sight detail for ID 1
+2025-05-20 16:17:44 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-20 16:17:48 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-20 16:17:48 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-20 16:17:49 - app.routers.sights - INFO - No cache found for key: sight:list:1:6
+2025-05-20 16:17:49 - app.routers.sights - INFO - Successfully cached sight list data, page: 1, count: 6
+2025-05-20 16:21:12 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:22:27 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:23:45 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:25:38 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:28:20 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-20 16:28:20 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-20 16:28:22 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:28:33 - app.routers.sights - INFO - No cache found for key: sight:detail:3
+2025-05-20 16:28:33 - app.routers.sights - INFO - Successfully cached sight detail for ID 3
+2025-05-20 16:28:33 - app.sight.router - INFO - get_sight_detail executed in 0.03 seconds
+2025-05-20 16:28:39 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:28:59 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:28:59 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-20 16:28:59 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-20 16:29:07 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-20 16:29:07 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-20 16:29:08 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:29:12 - app.routers.sights - INFO - No cache found for key: sight:list:2:6
+2025-05-20 16:29:12 - app.routers.sights - INFO - Successfully cached sight list data, page: 2, count: 6
+2025-05-20 16:29:13 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-20 16:29:34 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:list:1:6
+2025-05-22 15:49:55 - app - INFO - Logger configured successfully
+2025-05-22 15:49:55 - app - INFO - redis and db startup...
+2025-05-22 16:15:03 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-22 16:15:03 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-22 16:15:03 - app.routers.sights - INFO - Successfully cached hot sights data, count: 10
+2025-05-22 16:15:03 - app.routers.sights - INFO - Successfully cached fine sights data, count: 3
+2025-05-22 16:26:13 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-22 16:26:13 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-22 16:56:51 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-22 16:56:51 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-22 17:27:11 - app - INFO - redis and db shutdown...
+2025-05-22 17:27:11 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-22 17:27:11 - asyncio - ERROR - An open stream object is being garbage collected; call "stream.close()" explicitly.
+2025-05-22 17:27:58 - app - INFO - Logger configured successfully
+2025-05-22 17:27:59 - app - INFO - Logger configured successfully
+2025-05-22 17:27:59 - app - INFO - redis and db startup...
+2025-05-22 17:28:10 - app.routers.sights - INFO - No cache found for key: sight:hot:list
+2025-05-22 17:28:10 - app.routers.sights - INFO - No cache found for key: sight:fine:list
+2025-05-22 17:28:10 - app.routers.sights - INFO - Successfully cached hot sights data, count: 10
+2025-05-22 17:28:10 - app.routers.sights - INFO - Successfully cached fine sights data, count: 3
+2025-05-22 17:28:18 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-22 17:28:18 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-22 17:29:42 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-22 17:29:42 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list
+2025-05-22 17:29:49 - app.routers.sights - INFO - No cache found for key: sight:detail:1
+2025-05-22 17:29:49 - app.routers.sights - INFO - Successfully cached sight detail for ID 1
+2025-05-22 17:29:49 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-22 17:29:52 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:detail:1
+2025-05-22 17:29:52 - app.sight.router - INFO - get_sight_detail executed in 0.01 seconds
+2025-05-22 17:29:53 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:hot:list
+2025-05-22 17:29:53 - app.routers.sights - INFO - Successfully retrieved data from Redis cache: sight:fine:list

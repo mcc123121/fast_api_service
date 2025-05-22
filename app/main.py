@@ -5,6 +5,7 @@ from fastapi.staticfiles import StaticFiles
 import os
 from app.sight.router import router as sight_router
 from app.tickets.router import router as tickets_router
+# from app.auth import router as auth_router
 from app.database import  get_redis,create_async_db_pool,close_async_db_pool
 from app.utils.logger import setup_logger
 
@@ -20,7 +21,7 @@ async def lifespan(app: FastAPI):
     # Shutdown event
     logger.info("redis and db shutdown...")
     await app.state.redis.close()
-    await close_async_db_pool() 
+    await close_async_db_pool()
 
 
 app = FastAPI(
@@ -44,7 +45,7 @@ logger = setup_logger()
 
 # 注册路由
 app.include_router(tickets_router)
-app.include_router(sight_router)  
+app.include_router(sight_router)
 
 # 挂载静态文件目录
 app.mount("/static", StaticFiles(directory="app/static"), name="static")

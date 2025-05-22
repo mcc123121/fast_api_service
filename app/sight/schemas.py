@@ -60,7 +60,7 @@ class SightBase(BaseModel):
     is_valid: bool = True
 
 class SightCreate(SightBase):
-    pass
+    profile:SightProfileBase
 
 class SightResponse(SightBase):
     id: int
@@ -76,3 +76,31 @@ class SightResponse(SightBase):
 class SightListResponse(BaseModel):
     data: List[SightResponse]
     pagination: Optional[Dict[str, Any]] = None
+
+class SightUpdate(BaseModel):
+    name: Optional[str] = None
+    desc: Optional[str] = None
+    main_img: Optional[str] = None
+    banner_img: Optional[str] = None
+    content: Optional[str] = None
+    score: Optional[float] = None
+    min_price: Optional[float] = None
+    province: Optional[str] = None
+    city: Optional[str] = None
+    area: Optional[str] = None
+    town: Optional[str] = None
+    is_top: Optional[bool] = None
+    is_hot: Optional[bool] = None
+    is_valid: Optional[bool] = None
+
+    
+class SightProfileUpdate(BaseModel):
+    img: Optional[str] = None
+    address: Optional[str] = None
+    explain: Optional[str] = None
+    open_time: Optional[str] = None
+    tel: Optional[str] = None
+    level: Optional[str] = None
+    tags: Optional[str] = None
+    attention: Optional[str] = None
+    location: Optional[str] = None
